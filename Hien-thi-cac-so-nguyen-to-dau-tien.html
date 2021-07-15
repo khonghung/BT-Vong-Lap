@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Các số nguyên tố đầu tiên </title>
+</head>
+<body>
+<script>
+let N = parseInt(prompt("nhập số vào"))
+let count =0
+let n = 2
+while (count < N){
+    if (snt(n)) {
+        document.write(n + " ");
+        count++
+    }
+    n++;
+}
+    function  snt (number){
+
+    for (let n= 2; n< number; n++){
+        if ( number % n===0){
+            return false;
+        }else{
+            return true;}
+    }
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
